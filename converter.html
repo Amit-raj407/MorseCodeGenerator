@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MorseCode</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/4ed2628243.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">MorseCode Generator</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="converter.html">Generator Page </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-sm-12">
+                <div class="card-header">
+                    <h1>M o r s e c o d e G e n e r a t o r</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-lg-3 col-sm-0"></div>
+            <div class="col-lg-6 col-sm-12 box">
+                <form name="entree" id="entree">
+                    <div class="form-group mt-3">
+                        <label for="">Enter text to convert</label>
+                        <input type="text" class="form-control" id="text" aria-describedby="" placeholder="Enter Here" name='ALPHA'>
+                    </div>
+                    <input type="button" class="btn btn-info" value='To Morse Code' onclick="javascript:go()">
+                    <input type="button" class="btn btn-success" id="play" value='Play'>
+                    <div class="form-group mt-2">
+                        <div class="form-group">
+                            <label for="">Morse Code</label>
+                            <input type="text" class="form-control" id="morse" aria-describedby="" placeholder="MorseCode" name='MORSE'>
+                        </div>
+                    </div>
+                    <input type="button" class="btn btn-success" value='To Alphabet' onclick="javascript:ungo()">
+
+                    <div class="form-group text-center">
+                        <input type="reset" class="btn btn-warning" value='Clear All'>
+                    </div>
+
+                    <!-- Alphabet:
+                    <input size="30" id="text" type="text" name='ALPHA'>
+                    <input type="button" class="btn btn-info" value='To Morse Code' onclick="javascript:go()"> Morse Code:
+                    <input size="30" id="morse" type="text" name="MORSE">
+                    <input type="button" class="btn btn-success" value='To Alphabet' onclick="javascript:ungo()">
+
+                    <input type="reset" class="btn btn-warning" value='Clear All'> -->
+
+
+                </form>
+            </div>
+            <div class="col-lg-3 col-sm-0"></div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="footer">
+                <p>Copyright &copy; MorseCode</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="morsejs.js"></script>
+</body>
+
+</html>

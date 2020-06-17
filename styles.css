@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&family=Playfair+Display:ital@1&family=Roboto+Mono:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+.card-header {
+    text-align: center;
+    background: transparent;
+    font-family: 'Metal Mania', cursive;
+    font-weight: bold;
+}
+
+.card {
+    background: transparent;
+    margin-bottom: 2cm;
+}
+
+.card-header h5 {
+    text-align: left;
+    font-family: 'Roboto Mono', monospace;
+}
+
+p {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-image: url("https://jooinn.com/images/smoke-on-white-60.png");
+    background-size: cover;
+}
+
+mark {
+    background-color: white;
+    color: black;
+}
+
+.box {
+    box-shadow: 0 0 20px black;
+    border-radius: 30px;
+}
+
+input[type='text'] {
+    color: black;
+    font-weight: bold;
+    height: 30px;
+    background-color: whitesmoke;
+    padding-left: 10px;
+    border: 1px solid lightgreen;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(52, 58, 64);
+    color: white;
+    text-align: center;
+    height: 1.3cm;
+    padding-top: 10px;
+}
+
+.btn {
+    font-weight: bold;
+}
